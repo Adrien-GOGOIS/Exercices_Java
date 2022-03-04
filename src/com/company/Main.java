@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Stack;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -42,6 +44,26 @@ public class Main {
         for (int i = 0; i < array3.length; i++) {
             System.out.println("Element " + i + ": " + array3[i]);
         }
+
+        // TABLEAU DE STRINGS
+        String [] array4 = {"Voila", "un", "tableau"};
+        System.out.println(array4[0]);
+
+        // MATH RANDOM ENTRE 10 et 1
+        double num = Math.floor((Math.random() * 10 - 1) + 1 );
+        System.out.println(num);
+
+        // PUSH
+        Stack<String> st = new Stack<String>();
+        st.push("Voila");
+        System.out.println("Stack : " + st);
+
+        Stack<Integer> myArray = new Stack<Integer>();
+        myArray.push(3);
+        myArray.push(5);
+        myArray.push(7);
+        myArray.push(9);
+        System.out.println(myArray);
 
     }
 }
