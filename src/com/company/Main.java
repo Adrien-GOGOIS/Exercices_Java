@@ -3,6 +3,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
+        // FIZZBUZZ
         for (int i = 1; i <= 100; i++) {
             if(i % 15 == 0) {
                 System.out.println("fizzbuzz");
@@ -14,5 +15,18 @@ public class Main {
                 System.out.println(i);
             }
         }
+
+        // MATH.ROUND
+
+        float number = 23.58f;
+        System.out.println(Math.round(number));
+
+        // LENGTH
+
+        int[] array = new int[5];
+        String phrase = "Ceci est une phrase";
+        System.out.println("La taille du tableau est de " + array.length);
+        System.out.println("La longueur de la phrase est de " + phrase.length());
+
     }
 }
